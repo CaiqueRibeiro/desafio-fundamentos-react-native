@@ -35,7 +35,7 @@ const CartProvider: React.FC = ({ children }) => {
       );
 
       if (storagedProducts) {
-        setProducts(JSON.parse(storagedProducts));
+        setProducts([...JSON.parse(storagedProducts)]);
       }
     }
 
